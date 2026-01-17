@@ -30,7 +30,7 @@ Three tables: `programs`, `applications`, `notes`. Applications have a foreign k
 
 I took the application fields from the real TRMNL4 intake forms.
 
-Notes use a simple `authorName` text field since the spec said no auth. Would add a proper `users` table in production. Ideally with Google OAuth
+Notes use a simple `authorName` text field since the spec said no auth. Would add a proper `users` table in production. Ideally with Google OAuth or email + OTP
 
 ## Tech choices
 
