@@ -1,0 +1,41 @@
+{
+	"name": "test-task-taeyoung",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"db:up": "docker compose up -d",
+		"db:down": "docker compose down",
+		"db:migrate": "tsx scripts/migrate.ts",
+		"db:seed": "tsx scripts/seed.ts"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.0.0",
+		"@sveltejs/kit": "^2.5.0",
+		"@sveltejs/vite-plugin-svelte": "^4.0.0",
+		"@tailwindcss/postcss": "^4.1.18",
+		"autoprefixer": "^10.4.23",
+		"postcss": "^8.5.6",
+		"svelte": "^5.0.0",
+		"svelte-check": "^4.0.0",
+		"tailwindcss": "^4.1.18",
+		"tsx": "^4.21.0",
+		"typescript": "^5.0.0",
+		"vite": "^5.4.0"
+	},
+	"dependencies": {
+		"bits-ui": "^2.15.4",
+		"clsx": "^2.1.1",
+		"dotenv": "^17.2.3",
+		"kysely": "^0.28.9",
+		"mysql2": "^3.16.1",
+		"tailwind-merge": "^3.4.0",
+		"tailwind-variants": "^3.2.2"
+	}
+}
